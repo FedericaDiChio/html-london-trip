@@ -11,20 +11,25 @@
     <!-- INTESTAZIONE -->
     <header>
         <h1>Il mio Viaggio a Londra</h1>
-        <img src="./img/pexels-bill-emrich-230794-0.jpg" alt="Vista ampia Londra 1">
-        <img src="./img/pexels-bill-emrich-230794-1.jpg" alt="Vista ampia Londra 2">
-        <img src="./img/pexels-bill-emrich-230794-2.jpg" alt="Vista ampia Londra 3">
+        <div class="header-img">
+            <img src="./img/pexels-bill-emrich-230794-0.jpg" alt="Vista ampia Londra 1">
+            <img src="./img/pexels-bill-emrich-230794-1.jpg" alt="Vista ampia Londra 2">
+            <img src="./img/pexels-bill-emrich-230794-2.jpg" alt="Vista ampia Londra 3">
+        </div>
         <hr>
     </header>
     <!-- CORPO CENTRALE -->
     <main>
+        <!-- SPESE  -->
         <section class="expenses">
             <h3>Le mie spese</h3>
             <table>
                 <thead>
-                    <th>Numero</th>
-                    <th>Descrizione</th>
-                    <th>Costo</th>
+                    <tr>
+                        <th>Numero</th>
+                        <th>Descrizione</th>
+                        <th>Costo</th>
+                    </tr>    
                 </thead>
                 <tbody>
                     <tr>
@@ -45,14 +50,14 @@
                 </tbody>
                 <tfoot>
                     <tr>
-                        <td>Totale</td>
-                        <td></td>
+                        <td colspan="2">Totale</td>
                         <td>360€</td>
                     </tr>
                 </tfoot>
             </table>
             <hr>
         </section>
+        <!-- ATTIVITÀ -->
         <section class="to-do">
             <h4>Cose da fare</h4>
             <ul>
@@ -63,6 +68,7 @@
             </ul>
             <hr>
         </section>
+        <!-- INFORMAZIONI UTILI  -->
         <section class="info">
             <h4>Info utili:</h4>
             <ol>
@@ -88,10 +94,15 @@
             </ol>
             <hr>
         </section>
-        <section class="Pictures">
+        <!-- IMMAGINI FONDO PAGINA -->
+        <section class="pictures">
             <h4>Le foto</h4>
-            <img src="https://www.abta.com/sites/default/files/styles/large/public/media/uploads/london-400x400-compressor_0.jpg" alt="Vista su St. paul's cathedral">
-            <img src="https://pokerstarscareers.com/wp-content/uploads/2020/01/London-Wider-Area-e1597319992670-400x400.jpg" alt="Vista Covent Garden Market">
+            <div class="bottom-pics">
+                <img src="https://www.abta.com/sites/default/files/styles/large/public/media/uploads/london-400x400-compressor_0.jpg"
+                    alt="Vista su St. paul's cathedral">
+                <img src="https://pokerstarscareers.com/wp-content/uploads/2020/01/London-Wider-Area-e1597319992670-400x400.jpg"
+                    alt="Vista Covent Garden Market">
+            </div>
         </section>
     </main>
 </body>
